@@ -5,6 +5,8 @@ import SmurfsList from "./SmurfsList";
 import { SmurfContext } from '../contexts/SmurfContext';
 
 import "./App.css";
+import Jumbotron from "./Jumbotron";
+import Navbar from "./Navbar";
 
 const App = () => {
   const [ smurfs, setSmurfs ] = useState();
@@ -35,6 +37,8 @@ const App = () => {
     return (
       <SmurfContext.Provider value={{ smurfs, setSmurfs, addSmurfs, deleteSmurf }}>
         <div className="App">
+        <Navbar />
+        <Jumbotron />
           <h1>Smurf App</h1>
           <SmurfsForm />
           <SmurfsList />
