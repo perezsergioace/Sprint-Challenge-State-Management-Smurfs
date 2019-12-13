@@ -39,7 +39,6 @@ const App = () => {
         <div className="App">
         <Navbar />
         <Jumbotron />
-          <h1>Smurf App</h1>
           <SmurfsForm />
           <SmurfsList />
         </div>
